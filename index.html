@@ -1,0 +1,529 @@
+<!doctype html>
+    <head>
+        <meta charset = "UTF-8">
+        <title> Book Store </title>
+        <meta name = "description" content = "This is our Book Store">
+
+        <!-- To make a comment easily press ctrl + ? -->
+        <!-- 
+            Line1
+            Line2
+            Line3
+            Line4
+        -->
+        
+        <meta name = "MyCustomMeta" content= "v2.0">
+        <style>
+            body
+            {
+                background-color: rgb(103, 102, 102);
+            }
+        </style>
+        <script>  </script>
+
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1> Book store </h1>
+
+        <!-- 
+        <h2> Book store </h2>
+        <h3> Book store </h3>
+        <h4> Book store </h4>
+        <h5> Book store </h5>
+        <h6> Book store </h6>
+        -->
+        
+        <p class="one"> This is my book store, welcome :) </p>
+        <p class="two"> It's your lucky day, we have a sale yaaaaaay </p>
+        <p hidden> This paragraph will be hidden </p>
+
+        <!-- 
+        Some HTML Formating Stuff
+        b => bald, strong => bald for Important Text
+        i => Italic, em => Italic for special text
+        u => Underlined text
+        small => Smaller text 
+        del => Deleted text 
+        ins => Inserted text ( Underlined also )
+        sub => Subscript
+        sup => Superscript
+        -->
+
+        <p> <del>This is a deleted text</del> </p>
+        <p>h<sub>2</sub>o</p>
+        <p>2 <sup>2</sup></p>
+        
+        <!-- If you want to visit a link -->
+        <p>Visit my twitter: <a href="https://twitter.com/zeyadwaleed_" target="_blank" title="Going to Zeyad's Twitter account">Twitter</a></p>
+
+        <!-- If you want to visit a paragraph ( Don't forget to use the id attribute! ) -->
+        <p> <a href="#Line3" title="Going to third line">line 3</a></p>
+
+        <!-- If you want to visit an email -->
+        <p><a href="mailto:o@nn"> Contact me </a></p>
+
+        <p>line1</p>
+        <p>line2</p>
+        <p id = "Line3">line3</p>
+
+        <!-- 
+            src => Source ( img path )
+            alt => Alternate Text if the picture path isn't correct or if the picture is not available
+        -->
+        <img src="k0qnmoWl_400x400.jpg" alt="Free Palestine">
+
+        <!-- 
+            ul => Unordered List
+            li => List Item
+            ol => Ordered List
+        -->
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>
+                JS
+                <ul>
+                    <li>ReactJS</li>
+                    <li>Angular</li>
+                    <li>VueJS</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 
+            Attribute:
+            1.reversed => Reverse the ordering
+            2.start => Start from position
+            3.type => Type of Ordering ( A, a, I, etc... )
+        -->
+
+        <ol>
+            <li> Name </li>
+            <li> Adress </li>
+            <li> Id </li>
+        </ol>
+
+        <!-- 
+            dl => Description List
+            dt => Term
+            dd => Description Term
+        -->
+        <dl>
+            <dt> HTML </dt>
+            <dd> Is the language of Frontend geeks </dd>
+            <dt> CSS </dt>
+            <dd> For coloring bla bla </dd>
+        </dl>
+
+        <!-- 
+            thead
+            tbody
+            tfoot
+            tr => Table Row
+            td => Table Data Cell
+            th => Table Header Cell, Makes the font Bold to
+            There are attributes like Border = "1" but in CSS better!
+        -->
+
+        <table>
+            <caption> Students Marks </caption>
+            <thead>
+                <tr>
+                    <th> First </th>
+                    <th> Last </th>
+                    <th> Marks </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td> Zeyad </td>
+                    <td> Waleed </td>
+                    <td> 100 </td>
+                </tr>
+                <tr>
+                    <td> Zeyad </td>
+                    <td> Waleed </td>
+                    <td> 100 </td>
+                </tr>
+                <tr>
+                    <td> Zeyad </td>
+                    <td> Waleed </td>
+                    <td> 100 </td>
+                </tr>
+                <tr>
+                    <td> Zeyad </td>
+                    <td> Waleed </td>
+                    <td> 100 </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <!-- To merge 2 cells -->
+                    <td colspan="2"> Total </td>
+                    <td> 400 </td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <!-- 
+            span => Inline Element!, To Isolate specific element
+            br => To go to a new line
+            hr => Block Element!
+        -->
+        <p> My favorite player is <span><b>Messi</b></span></p>
+        <hr> 
+        <p> I am now testing the <br> br method </p>
+        <hr>
+
+        <!-- 
+            div => Is a container to other elements ( Very Important to use! )
+        -->
+        <div>
+            <p>
+                I am now trying the div element <br>
+                now I am in a new line thanks to br method <br>
+                Hi this is the third line in the same fucking paragraph.
+            </p>
+            <hr>
+        </div>
+
+        <!-- Now I am trying the div element with different sections of books -->
+        <div class="Romantic">
+            <div>
+                <h3> Book Title1 </h3>
+                <p> This is a romantic book </p>
+                <span> $120 </span>
+            </div>
+            <div>
+                <h3> Book Title2 </h3>
+                <p> This is a romantic book </p>
+                <span> $320 </span>
+            </div>
+            <div>
+                <h3> Book Title3 </h3>
+                <p> This is a romantic book </p>
+                <span> $360 </span>
+            </div>
+        </div>
+        <hr>
+        <div class="Police">
+            <div>
+                <h3> Police Book1 </h3>
+                <p> This is a police type of books </p>
+                <span> $100 </span>
+            </div>
+            <div>
+                <h3> Police Book2 </h3>
+                <p> This is a police type of books </p>
+                <span> $170 </span>
+            </div>
+            <div>
+                <h3> Police Book3 </h3>
+                <p> This is a police type of books </p>
+                <span> $50 </span>
+            </div>
+        </div>
+        <hr>
+
+        <!-- 
+            HTML Entities, things which can't be writen using keyboard
+            &entity;
+            If you wanted, you can google Html entities list
+        -->
+        <div>
+            <p> I am now trying the HTML Entities &copf; &caps; &gacute; &ascr; &barwed;</p>
+        </div>
+        <hr>
+
+        <!--
+            Semantic elements, Block elements
+            HTML4 : Only div elements
+            HTML5 : There is an updated element of the div element called ( Semantic element )
+            you can use the Same attributes tho!
+        -->
+        <div>
+            <img src="htmlsemantic.jpg" alt="">
+        </div>
+        <hr>
+
+        <!-- 
+            How to add an audio:
+            1. Use the audio tag
+            2. Use the source tag to add different sources for the audio:
+            source attributes:
+                1. Src 
+                2. type => The MIMI type of the audio, Google it 
+                Use this link "https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types"
+            
+            We add many soucres so the browser selects the better extenction type for him ( mp3, ogg, etc...)
+            All browsers supports mp3 tho!
+
+            You should add a line at the end of audio tag, 
+            if the browser doesn't support any of the sources you provided
+            it appears!
+
+            Audio Attributes:
+                1. Controls
+                2. Autoplay, sadly it is not supported anymore!
+                3. Loop
+                4. Muted
+        -->
+
+        <div>
+            <header> Sorry, Zeyad </header>
+            <br>
+            <audio controls loop>
+                <source src="C:\Users\USER\Music\CairoKee, Aida El Ayoubi -Ya El Medan كايروكي وعايدة الأيوبي يا الميدان.mp3" type = "audio/mpeg">
+                <source src="C:\Users\USER\Music\CairoKee, Aida El Ayoubi -Ya El Medan كايروكي وعايدة الأيوبي يا الميدان.ogg" type = "audio/ogg">
+                Your browser doesn't support audio tags!
+            </audio>
+            <img src="hqdefault.jpg" alt="">
+        </div>
+        <hr>
+
+        <!-- 
+            How to add a video: Same as Audio!
+            Autoplay attribute isn't supported :(
+            Poster attribute appears until the video actually starts!
+
+            Track tag is to add Translation to the video
+            srclang => The language
+            label => language name
+        -->
+        <video controls width="600" height="400" loop muted poster="hqdefault.jpg" >
+            <source src="blablabla.mp4" type = "video/mp4">
+            <source src="blablabla.ogg" type = "video/ogg">
+            Sorry, I don't have any videos on my computer!
+            <track src = "blablabla_en.vtt" kind = "subtitles" srclang = "en" label = "English">
+        </video>
+        <hr>
+
+        <!-- 
+            What if you wanted to make a form?
+            1. form tag
+                - Action attribute => the place (URL) where the information that I have taken from the user should be sent to
+                - novalidate => You can submit without inserting info in any field
+                - target = "_blank" => when you submit, you by default go to a new page
+
+            2. input tag => Inline element
+                - Type attribute => To choose the type of the input 
+                - required attribute => You can't submit unless you have entered the required inputs!
+                - placeholder attribute => an initially written text in the input field
+                - readonly => you can't write in this field, Info can be sent normaly
+                - disabled => //   //      //    // //   //, but info can't be sent to the server lmao 
+                - autofocus => Initialy you will be autofocused on a field
+                - minlength => you can't write less than x characters
+                - maxlength => you can't write more than x characters
+                - checked => Used with radio typed input to initialy check one of the radio options
+                - Id & for => To link the label with the input
+                - list attribue => you can make a list of something,
+                by using the list attribute you can search for the option you want!
+
+                - name attribute => I necessary attribute, you tell your backend dev teammate what is the information you have sent him
+                    - method attribute:
+                        -- method = "GET" => The info will appear in the URI as a query string parameters
+                        -- method = "POST" => The info will not apprear in the URI ( will be hidden )
+
+            3. Label tag => What is the input you want the user to enter
+
+            4. Select tag => To select one option from multiple options
+                - Option tag => To enter the option 
+                - Option group tag => To make group of options
+                - multiple attribute => The user can choose multiple option from the given options
+                - selected attribute => initialy select an option
+            
+            5. textarea rag => Creates an area to write what ever you want ( usually a user comment )
+
+            If you wanted to change a previous value you can add the attribute value and write in it the previous value!
+        -->
+
+        <form action = "BackEndZeyad.com" method = "post" target="_blank">
+
+            <input hidden = "Id" value = '1'>
+
+            <div>
+                <label>UserName</label>
+                <input type = "text" required name = "un">
+            </div>
+            <br>
+
+            <div>
+                <label>Password</label>
+                <input type = "password" required placeholder="Complex password :)" name = "pass" minlength="10" maxlength="15">
+            </div>
+            <br>
+
+            <div>
+                <label>Email</label>
+                <input type = "email" required placeholder="Enter your Email" value = "blablabla@gmial.com" name = "mail" readonly>
+            </div>
+            <br>
+
+            <div>
+                <label>Email</label>
+                <input type = "email" required placeholder="Enter your Email" value = "blablabla@gmial.com" name = "mail" disabled>
+            </div>
+            <br>
+
+            <div>
+                <label>New password</label>
+                <input type = "password" required placeholder="Enter new pass" name = "newPass">
+            </div>
+            <br>
+
+            <label> Color </label>
+            <input type="color" name = "Color">
+            <br>
+
+            <div>
+                <label> Range </label>
+                <input type="range" min="0" max="100" step="20">
+            </div>
+            <br>
+
+            <div>
+                <label for = "num" > Number </label>
+                <input id =  "num" type="number" name = "num" min="0" max="10000" step="20" >
+            </div>
+            <br>
+
+            <div>
+                <input id = "win" type="radio" name = "OS" value = "Windows" checked>
+                <label for = "win"> Windows </label>
+            </div>
+
+            <div>
+                <input id = "lin" type="radio" name = "OS" value = "Linux">
+                <label for="lin"> Linux </label>
+            </div>
+
+            <div>
+                <input id = "mac" type="radio" name = "OS" value = "Mac">
+                <label for = "mac"> Mac </label>
+            </div>
+            <br>
+
+            <div>
+                <input id = "win1" type="checkbox" name = "OS" value = "Windows" >
+                <label for = "win1"> Windows </label>
+            </div>
+
+            <div>
+                <input id = "lin1" type="checkbox" name = "OS" value = "Linux">
+                <label for="lin1"> Linux </label>
+            </div>
+
+            <div>
+                <input id = "mac1" type="checkbox" name = "OS" value = "Mac">
+                <label for = "mac1"> Mac </label>
+            </div>
+            <br>
+
+            <label for="Book">Choose a Book: </label>
+            <select name="Book" id="Book">
+                <optgroup label = "Romantic">
+                    <option value="1">Book1</option>
+                    <option value="2">Book2</option>
+                    <option value="3">Book3</option>
+                    <option value="4">Book4</option>
+                </optgroup>
+                <optgroup label = "Fantasy">
+                    <option value="5" selected>Book5</option>
+                    <option value="6">Book6</option>
+                    <option value="7">Book7</option>
+                    <option value="8">Book8</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <textarea name="" id="" cols="40" rows="5" placeholder="Any comment?"></textarea>
+            <br>
+
+            <label> Upload a file </label>
+            <input type="file">
+            <br><br>
+
+            <label>Search</label>
+            <input type="search">
+            <br><br>
+
+            <label>Enter a link</label>
+            <input type="url">
+            <br><br>
+
+            <label>Date</label>
+            <input type="date">
+            <br><br>
+
+            <label>Month</label>
+            <input type="month">
+            <br><br>
+
+            <label>Time</label>
+            <input type="time">
+            <br><br>
+
+            <input list="programming" name = "prog">
+            
+            <datalist id = "programming">
+                <option value="Python"></option>
+                <option value="PHP"></option>
+                <option value="CPP"></option>
+                <option value="JS"></option>
+            </datalist>
+            <br><br>
+
+            <input type="reset">
+            <input type="submit" value = "Save">
+
+        </form>
+        <hr>
+
+        <!-- 
+            q => To add a line in quotation marks, Inline!
+            blockquote
+            button
+            bdi => If you had English with Arabic line and you had problems in writing the line,
+            you can use the bdi to isolate whatever you want!
+        -->
+
+        <q> This is a wise word </q>
+        <blockquote> This is another wise word </blockquote>
+        <button> click </button>
+
+        <p><bdi>Hello</bdi> أهلا </p>
+        <hr>
+
+        <!-- 
+            code => Used if you wanted to write a code
+            pre
+            iframe => If you wanted to add a web page to your web in a small frame
+        -->
+
+        <div>
+            <pre>
+                    This is a c++ code:
+                <code>
+                    int n; cin >> n;
+                    cout << n * 2 << endl;
+                </code>
+            </pre>
+        </div>
+        <hr>
+
+        <iframe src="https://elzero.org/" frameborder="0" width="1500" height="300"></iframe>
+        <hr>
+
+        <!-- 
+            We can Use Live Server extention to open our web page using the HTTP protocol!
+            Inspect your web page then use the lighthouse to check the accessibility of your project
+
+            Area attribute for blind people
+        -->
+    </body>
+</html>
